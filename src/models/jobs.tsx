@@ -1,7 +1,7 @@
 import { Profile } from './profile';
 import { JobImage } from './jobimage';
 
-export interface Jobs {
+export default interface Jobs {
   ID: string;
   jobTitle: string;
   jobType: string;
@@ -24,6 +24,6 @@ export interface Jobs {
   jobImageArr: JobImage;
 }
 
-export interface JobLists {
+export default interface JobLists {
   jobsArr: Jobs[];
 }

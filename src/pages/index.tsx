@@ -10,6 +10,7 @@ import Parallax from '@/components/home/parallax';
 export default function HomePage() {
   return (
     <Layout>
+      test
       <Seo templateTitle='Home' />
       <main>
         <section>

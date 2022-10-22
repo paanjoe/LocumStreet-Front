@@ -1,0 +1,14 @@
+{
+  "c": ["pages/login", "webpack"],
+  "r": ["pages/about"],
+  "m": [
+    "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?absolutePagePath=%2FUsers%2Fpaanjoe%2FDesktop%2FProjects%2FLocumStreet%2FFront-End%2Fsrc%2Fpages%2Fabout.tsx&page=%2Fabout!",
+    "./src/components/about/boxFeature.tsx",
+    "./src/components/about/contact.tsx",
+    "./src/components/about/feature.tsx",
+    "./src/components/about/inquiry.tsx",
+    "./src/components/about/maps.tsx",
+    "./src/components/about/top.tsx",
+    "./src/pages/about.tsx"
+  ]
+}

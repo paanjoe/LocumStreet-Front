@@ -1,0 +1,5 @@
+{
+  "c": ["pages/job-search", "webpack"],
+  "r": [],
+  "m": ["./node_modules/swr/dist/index.mjs"]
+}

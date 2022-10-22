@@ -1,0 +1,29 @@
+
+
+< JOB DETAILS >
+*JobTitle: string
+*JobType: string
+*JobField: string
+*JobSalaryFigure: double
+*JobSalaryType: string
+*JobDescription: text
+*JobLocation: string
+*JobImageID: Arr[]
+*JobDateStart: datetime
+*JobDateEnd: datetime
+*JobTimeStart: time
+*JobTimeEnd: time
+*JobProfitSharing: number
+JobStatus: boolean
+ListingStatus: boolean
+
+< JOB OWNER >
+*JobOwner: string
+*JobOwnerEmail: string
+*JobOwnerContact: string
+
+
+< JOB LOCATION >
+*JobProvince: string
+*JobDistrict: string
+*JobDatePosted: datetime

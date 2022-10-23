@@ -1,21 +1,13 @@
 import { production } from 'environment';
 import { useState } from 'react';
 import LogoComponent from '../logo';
-import BNBComponent from './bnbcomponent';
 
 const DonateComponent = () => {
   const [showModalBNB, setShowModalBNB] = useState(false);
 
   const copyBNB = async () => {
     await navigator.clipboard.writeText(
-      '0xF70ccD734C779B0a852E3Ab3c2657D7a4a981462'
-    );
-    alert('BNB Address Copied');
-  };
-
-  const copyETH = async () => {
-    await navigator.clipboard.writeText(
-      '0xF70ccD734C779B0a852E3Ab3c2657D7a4a981462'
+      production.Metamask_ID
     );
     alert('BNB Address Copied');
   };
@@ -110,7 +102,7 @@ const DonateComponent = () => {
                   onClick={copyBNB}
                   className='px-4 py-2 rounded-full text-gray-500 bg-gray-200 font-semibold text-sm flex align-center w-max cursor-pointer active:bg-gray-300 transition duration-300 ease'
                 >
-                  0xF70ccD734C779B0a852E3Ab3c2657D7a4a981462
+                 {production.Metamask_ID}
                 </span>
               </div>
             </div>

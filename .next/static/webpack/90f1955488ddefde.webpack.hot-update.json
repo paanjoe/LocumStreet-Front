@@ -1,0 +1,27 @@
+{
+  "c": ["webpack"],
+  "r": ["pages/login", "pages/index", "pages/job-search", "pages/job-details"],
+  "m": [
+    "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?absolutePagePath=%2FUsers%2Fpaanjoe%2FDesktop%2FProjects%2FLocumStreet%2FFront-End%2Fsrc%2Fpages%2Flogin.tsx&page=%2Flogin!",
+    "./src/components/login/loginform.tsx",
+    "./src/pages/login.tsx",
+    "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?absolutePagePath=%2FUsers%2Fpaanjoe%2FDesktop%2FProjects%2FLocumStreet%2FFront-End%2Fsrc%2Fpages%2Findex.tsx&page=%2F!",
+    "./src/components/home/parallax.tsx",
+    "./src/components/links/ArrowLink.tsx",
+    "./src/components/links/UnderlineLink.tsx",
+    "./src/pages/index.tsx",
+    "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?absolutePagePath=%2FUsers%2Fpaanjoe%2FDesktop%2FProjects%2FLocumStreet%2FFront-End%2Fsrc%2Fpages%2Fjob-search.tsx&page=%2Fjob-search!",
+    "./src/components/jobs/filter.tsx",
+    "./src/components/jobs/jobcomponent.tsx",
+    "./src/components/jobs/jobfield.tsx",
+    "./src/components/jobs/joblist.tsx",
+    "./src/components/jobs/jobtype.tsx",
+    "./src/components/jobs/province.tsx",
+    "./src/components/jobs/searchbar.tsx",
+    "./src/pages/job-search.tsx",
+    "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?absolutePagePath=%2FUsers%2Fpaanjoe%2FDesktop%2FProjects%2FLocumStreet%2FFront-End%2Fsrc%2Fpages%2Fjob-details.tsx&page=%2Fjob-details!",
+    "./src/components/jobs/breadcrumb.tsx",
+    "./src/components/jobs/details.tsx",
+    "./src/pages/job-details.tsx"
+  ]
+}

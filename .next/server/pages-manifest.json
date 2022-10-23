@@ -1,23 +1,5 @@
 {
   "/_app": "pages/_app.js",
-  "/_document": "pages/_document.js",
-  "/about": "pages/about.html",
-  "/404": "pages/404.html",
-  "/api/authcontext": "pages/api/authcontext.js",
-  "/api/job/[id]": "pages/api/job/[id].js",
-  "/api/jobImage/[id]": "pages/api/jobImage/[id].js",
-  "/api/jobImages": "pages/api/jobImages.js",
-  "/api/jobs": "pages/api/jobs.js",
-  "/api/profiles": "pages/api/profiles.js",
-  "/api/profile/[id]": "pages/api/profile/[id].js",
-  "/api/register": "pages/api/register.js",
-  "/footer": "pages/footer.html",
-  "/components": "pages/components.html",
-  "/forgot": "pages/forgot.html",
-  "/header": "pages/header.html",
-  "/": "pages/index.html",
-  "/job-details": "pages/job-details.html",
-  "/job-search": "pages/job-search.html",
-  "/login": "pages/login.html",
-  "/_error": "pages/_error.js"
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js"
 }

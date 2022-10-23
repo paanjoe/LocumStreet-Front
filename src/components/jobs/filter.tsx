@@ -1,5 +1,5 @@
 import JobField from './jobfield';
-import JobType from './jobtype'
+import JobType from './jobtype';
 import Province from './province';
 import SearchBar from './searchbar';
 

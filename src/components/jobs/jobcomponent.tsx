@@ -39,9 +39,3 @@ export default function JobComponent() {
     </div>
   );
 }
-
-export async function loadJobs() {
-  const res = await fetch('/api/jobs');
-  const data = await res.json();
-  return data;
-}

@@ -1,12 +1,7 @@
-/* eslint-disable @next/next/no-html-link-for-pages */
-
 import { useState } from 'react';
-
 import ButtonLink from '@/components/links/ButtonLink';
-
 export default function Header() {
   const [navbar, setNavbar] = useState(false);
-
   return (
     <header>
       <nav className='border-1 w-full bg-white shadow'>
@@ -126,6 +121,17 @@ export default function Header() {
                 </li>
                 <li className='text-gray-600 hover:text-blue-600'>
                   <a href='/job-search'>Find Job</a>
+                </li>
+                <li className='text-gray-600 hover:text-blue-600'>
+                  <a href='/register'>Sign Up</a>
+                </li>
+                <li className='text-gray-600 hover:text-blue-600'>
+                  <ButtonLink
+                    className='border-0 bg-gradient-to-r from-red-600 to-pink-400 transition duration-300 ease-in-out hover:-translate-y-0 hover:scale-110 hover:to-pink-500'
+                    href='/donate'
+                  >
+                    Donate 😘
+                  </ButtonLink>
                 </li>
                 <li className='text-gray-600 hover:text-blue-600'>
                   <ButtonLink

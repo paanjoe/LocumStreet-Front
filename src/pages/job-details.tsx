@@ -1,6 +1,5 @@
 import Breadcrumb from '@/components/jobs/breadcrumb';
 import Details from '@/components/jobs/details';
-import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
 
 import Footer from '@/pages/footer';
@@ -8,7 +7,7 @@ import Header from '@/pages/header';
 
 export default function JobDetails() {
   return (
-    <Layout>
+    <div>
       <Seo templateTitle='Job Details'></Seo>
       <Header></Header>
       <div className='bg-slate-100'>
@@ -20,6 +19,6 @@ export default function JobDetails() {
         </div>
       </div>
       <Footer></Footer>
-    </Layout>
+    </div>
   );
 }

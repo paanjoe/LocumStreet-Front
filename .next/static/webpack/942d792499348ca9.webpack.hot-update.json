@@ -1,0 +1,13 @@
+{
+  "c": ["pages/_app", "pages/index", "webpack"],
+  "r": ["pages/404"],
+  "m": [
+    "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?absolutePagePath=%2FUsers%2Fpaanjoe%2FDesktop%2FProjects%2FLocumStreet%2FFront-End%2Fsrc%2Fpages%2F404.tsx&page=%2F404!",
+    "./node_modules/react-icons/lib/esm/iconBase.js",
+    "./node_modules/react-icons/lib/esm/iconContext.js",
+    "./node_modules/react-icons/lib/esm/iconsManifest.js",
+    "./node_modules/react-icons/lib/esm/index.js",
+    "./node_modules/react-icons/ri/index.esm.js",
+    "./src/pages/404.tsx"
+  ]
+}

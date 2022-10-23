@@ -1,4 +1,3 @@
-import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
 
 import Footer from '@/pages/footer';
@@ -9,7 +8,7 @@ import JobList from '@/components/jobs/joblist';
 
 export default function JobSearch() {
   return (
-    <Layout>
+    <div>
       <Seo templateTitle='Find Job' />
       <Header></Header>
       <div className='flex h-screen'>
@@ -17,6 +16,6 @@ export default function JobSearch() {
         <JobList />
       </div>
       <Footer></Footer>
-    </Layout>
+    </div>
   );
 }

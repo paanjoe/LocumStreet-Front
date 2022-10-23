@@ -36,6 +36,18 @@ export default function Top() {
               <path d='M5 12h14M12 5l7 7-7 7'></path>
             </svg>
           </ButtonLink>
+          <p className='mb-8 mt-8 leading-relaxed'>
+            We are a nonprofit movement, we are self-initiated, It is a platform
+            to help professional healthcare to find locum job. Please consider
+            helping us so we can continue to run this website & help the
+            professional healthcare in Malaysia 🇲🇾
+          </p>
+          <ButtonLink
+            className='border-0 bg-gradient-to-r from-red-600 to-pink-400 transition duration-300 ease-in-out hover:-translate-y-0 hover:scale-110 hover:to-pink-500'
+            href='/donate'
+          >
+            Donate 😘
+          </ButtonLink>
         </div>
         <div className='w-5/6 md:w-1/2 lg:w-full lg:max-w-lg'>
           <svg

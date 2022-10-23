@@ -1,0 +1,14 @@
+{
+  "c": ["pages/about", "webpack"],
+  "r": ["pages/donate", "pages/forgot"],
+  "m": [
+    "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?absolutePagePath=%2FUsers%2Fpaanjoe%2FDesktop%2FProjects%2FLocumStreet%2FFront-End%2Fsrc%2Fpages%2Fdonate.tsx&page=%2Fdonate!",
+    "./src/components/donate/donatecomponent.tsx",
+    "./src/components/logo.tsx",
+    "./src/pages/donate.tsx",
+    "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?absolutePagePath=%2FUsers%2Fpaanjoe%2FDesktop%2FProjects%2FLocumStreet%2FFront-End%2Fsrc%2Fpages%2Fforgot.tsx&page=%2Fforgot!",
+    "./src/components/login/forgotpassword.tsx",
+    "./src/components/login/forgotsuccess.tsx",
+    "./src/pages/forgot.tsx"
+  ]
+}

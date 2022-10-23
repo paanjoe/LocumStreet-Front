@@ -1,0 +1,5 @@
+{
+  "c": ["pages/donate", "webpack"],
+  "r": [],
+  "m": ["./src/components/donate/bnbcomponent.tsx"]
+}

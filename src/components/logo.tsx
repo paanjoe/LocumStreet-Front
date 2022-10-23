@@ -1,6 +1,6 @@
 export default function LogoComponent() {
   return (
-    <div className='flex items-center justify-center py-3 md:block md:py-5'>
+    <div className='flex items-center justify-center py-3 md:block'>
       <a href='/' className='flex justify-center items-center'>
         <svg
           className='flex h-8 w-8 items-center'

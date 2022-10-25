@@ -1,4 +1,11 @@
+// Dekat sini kena panggil authContext dan letak link response dari google dan letak hyperlink
+// Logic
+// 1. Buat function call api AuthContext dan pass params 'Facebook or 'Google'
+// 2. Return google url dan letak dekat const url
+// 3. lps tu letak a href={url}
+
 export default function LoginForm() {
+  const testURL = 'https://accounts.google.com/o/oauth2/auth?client_id=34998620114-rah2h9r09ugdiinm5ehaekc8ijleu6ag.apps.googleusercontent.com&code_challenge=913k0HepwE_XU6EJUyGvMlmUEK6uZ3BaJfSt3_PQ-2w&code_challenge_method=S256&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&state=UPmA1qOEEFv3jeP9xLmFCW3580pQX1&redirect_uri=http://localhost:3000';
   return (
     <div className='flex min-h-screen items-center justify-center py-10 px-4 sm:px-6 lg:px-8 bg-slate-100'>
       <div className='w-full max-w-lg space-y-8 bg-white rounded-md shadow shadow-slate-300 py-10 px-10'>
@@ -133,7 +140,8 @@ export default function LoginForm() {
           className='inline-flex justify-center items-center w-full rounded-md shadow-sm'
           role='group'
         >
-          <button
+          <a
+            href={testURL}
             type='button'
             className='transition-all ease-in duration-200 inline-flex w-full justify-center text-center items-center py-2 px-4 text-sm font-medium text-violet-600 bg-transparent rounded-l-lg border border-violet-600 hover:bg-violet-600 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-violet-600 focus:text-white'
           >
@@ -164,7 +172,7 @@ export default function LoginForm() {
             <div className='sm: hidden md:inline pl-3 text-xs'>
               Login with Google
             </div>
-          </button>
+          </a>
           <button
             type='button'
             className='border-l-0 transition-all ease-in duration-200 inline-flex w-full text-center justify-center items-center py-2 px-4 text-sm font-medium text-violet-600 bg-transparent rounded-r-md border border-violet-600 hover:bg-violet-600 hover:text-white focus:z-10 focus:ring-2 focus:ring-violet-600 focus:bg-violet-700 focus:text-white'

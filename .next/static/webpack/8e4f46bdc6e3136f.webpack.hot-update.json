@@ -1,5 +1,0 @@
-{
-  "c": ["pages/register", "webpack"],
-  "r": [],
-  "m": ["./src/components/register/registerform.tsx"]
-}

@@ -10,13 +10,13 @@ export default async function (req: NextApiRequest, res: NextApiResponse) {
   const loginMethod = 'google';
 
   // Get API URL
-  const baseUrl = production.baseUrl;
+  const baseUrl = process.env.baseUrl;
 
   // Init back-end
   const client = new PocketBase(baseUrl);
 
   // Set Redirect page to /redirect
-  const redirectUrl = production.OAuth_Redirect_URL;
+  const redirectUrl = process.env.OAuth_Redirect_URL;
 
   // Make sure the api calls method is valid
   switch(method) {
@@ -30,7 +30,7 @@ export default async function (req: NextApiRequest, res: NextApiResponse) {
               return providerObj.name = loginMethod;
             });
 
-            const loginURL = provider?.authUrl + redirectUrl;
+            const loginURL = provider?.authUrl! + redirectUrl;
             return res.status(200).json(loginURL);
           } catch (err) {
             return res.status(400).json(err);

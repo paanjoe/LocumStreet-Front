@@ -7,7 +7,7 @@ const DonateComponent = () => {
 
   const copyBNB = async () => {
     await navigator.clipboard.writeText(
-      production.Metamask_ID
+      process.env.Metamask_ID!
     );
     alert('BNB Address Copied');
   };
@@ -90,7 +90,7 @@ const DonateComponent = () => {
               </div>
               <div className='p-6 space-y-6'>
               <img
-                  src={production.baseUrl + '/api/files/q5puijv412kcxpw/4g690a4nb258en5/ethqr_edqaWU4lYu.png'}
+                  src={process.env.baseUrl + '/api/files/q5puijv412kcxpw/4g690a4nb258en5/ethqr_edqaWU4lYu.png'}
                   className='align-center'
                 />
                 <p className='text-base leading-relaxed text-gray-500 '>

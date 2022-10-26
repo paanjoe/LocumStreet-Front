@@ -9,7 +9,7 @@ export default async function (req: NextApiRequest, res: NextApiResponse) {
   const method = req.method;
 
   // We want to set our base API URL
-  const baseUrl = production.baseUrl;
+  const baseUrl = process.env.baseUrl;
 
   // Initialize our back end apps
   const client = new PocketBase(baseUrl);

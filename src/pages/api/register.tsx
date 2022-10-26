@@ -7,7 +7,7 @@ export default async function (req: NextApiRequest, res: NextApiResponse) {
   const method = req.method;
 
   // Load API URL
-  const baseUrl = production.baseUrl;
+  const baseUrl = process.env.baseUrl;
 
   // Init client
   const client = new PocketBase(baseUrl);

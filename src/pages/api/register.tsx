@@ -1,4 +1,3 @@
-import { production } from 'environment';
 import { NextApiRequest, NextApiResponse } from 'next';
 import PocketBase from 'pocketbase';
 

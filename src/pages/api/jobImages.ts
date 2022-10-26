@@ -1,6 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import PocketBase from 'pocketbase';
-import { production } from '../../../environment';
 
 export default async function (req: NextApiRequest, res: NextApiResponse) {
   // We want to add authorization for security

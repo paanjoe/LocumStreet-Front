@@ -1,6 +1,5 @@
 import LoginForm from '@/components/login/loginform';
 import Seo from '@/components/Seo';
-import { production } from 'environment';
 import Footer from './footer';
 import Header from './header';
 import PocketBase from 'pocketbase';

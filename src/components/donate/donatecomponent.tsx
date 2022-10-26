@@ -1,4 +1,4 @@
-import { production } from 'environment';
+
 import { useState } from 'react';
 import LogoComponent from '../logo';
 
@@ -102,7 +102,7 @@ const DonateComponent = () => {
                   onClick={copyBNB}
                   className='px-4 py-2 rounded-full text-gray-500 bg-gray-200 font-semibold text-sm flex align-center w-max cursor-pointer active:bg-gray-300 transition duration-300 ease'
                 >
-                 {production.Metamask_ID}
+                 {process.env.Metamask_ID}
                 </span>
               </div>
             </div>

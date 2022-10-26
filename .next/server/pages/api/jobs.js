@@ -1,45 +1,99 @@
 "use strict";
-/*
- * ATTENTION: An "eval-source-map" devtool has been used.
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 (() => {
 var exports = {};
-exports.id = "pages/api/jobs";
-exports.ids = ["pages/api/jobs"];
+exports.id = 129;
+exports.ids = [129];
 exports.modules = {
 
-/***/ "pocketbase":
-/*!*****************************!*\
-  !*** external "pocketbase" ***!
-  \*****************************/
+/***/ 3895:
 /***/ ((module) => {
 
 module.exports = import("pocketbase");;
 
 /***/ }),
 
-/***/ "(api)/./environment.ts":
-/*!************************!*\
-  !*** ./environment.ts ***!
-  \************************/
+/***/ 2092:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"production\": () => (/* binding */ production)\n/* harmony export */ });\nconst production = {\n    production: true,\n    baseUrl: \"https://locumstreet.fly.dev\",\n    Google_ClientID: \"34998620114-rah2h9r09ugdiinm5ehaekc8ijleu6ag.apps.googleusercontent.com\",\n    Google_SecretID: \"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\",\n    Facebook_ClientID: \"559742852486035\",\n    Facebook_SecretID: \"35686ce94d0c85f6ab91da3f7c1a18d6\",\n    BuyMeCoffee_Link: \"https://www.buymeacoffee.com/paanjoe\",\n    Metamask_ID: \"0xF70ccD734C779B0a852E3Ab3c2657D7a4a981462\",\n    JWT_SecretID: \"e302f64d73f4e8fa91177c47ccf95fa1\"\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9lbnZpcm9ubWVudC50cy5qcyIsIm1hcHBpbmdzIjoiOzs7O0FBQU8sTUFBTUEsVUFBVSxHQUFHO0lBQ3hCQSxVQUFVLEVBQUUsSUFBSTtJQUNoQkMsT0FBTyxFQUNMLDZCQUE2QjtJQUMvQkMsZUFBZSxFQUNiLHlFQUF5RTtJQUMzRUMsZUFBZSxFQUNiLHFDQUFxQztJQUN2Q0MsaUJBQWlCLEVBQ2YsaUJBQWlCO0lBQ25CQyxpQkFBaUIsRUFDZixrQ0FBa0M7SUFDcENDLGdCQUFnQixFQUNkLHNDQUFzQztJQUN4Q0MsV0FBVyxFQUNULDRDQUE0QztJQUM5Q0MsWUFBWSxFQUNWLGtDQUFrQztDQUNyQyxDQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vdHMtbmV4dGpzLXRhaWx3aW5kLXN0YXJ0ZXIvLi9lbnZpcm9ubWVudC50cz84NmQ0Il0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBjb25zdCBwcm9kdWN0aW9uID0ge1xuICBwcm9kdWN0aW9uOiB0cnVlLFxuICBiYXNlVXJsOiBcbiAgICAnaHR0cHM6Ly9sb2N1bXN0cmVldC5mbHkuZGV2JyxcbiAgR29vZ2xlX0NsaWVudElEOlxuICAgICczNDk5ODYyMDExNC1yYWgyaDlyMDl1Z2RpaW5tNWVoYWVrYzhpamxldTZhZy5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbScsXG4gIEdvb2dsZV9TZWNyZXRJRDogXG4gICAgJ0dPQ1NQWC1FT1NlRkFrZ0xrR2l2dnFDZ2xGeS10bkpaaGh0JyxcbiAgRmFjZWJvb2tfQ2xpZW50SUQ6IFxuICAgICc1NTk3NDI4NTI0ODYwMzUnLFxuICBGYWNlYm9va19TZWNyZXRJRDogXG4gICAgJzM1Njg2Y2U5NGQwYzg1ZjZhYjkxZGEzZjdjMWExOGQ2JyxcbiAgQnV5TWVDb2ZmZWVfTGluazogXG4gICAgJ2h0dHBzOi8vd3d3LmJ1eW1lYWNvZmZlZS5jb20vcGFhbmpvZScsXG4gIE1ldGFtYXNrX0lEOiBcbiAgICAnMHhGNzBjY0Q3MzRDNzc5QjBhODUyRTNBYjNjMjY1N0Q3YTRhOTgxNDYyJyxcbiAgSldUX1NlY3JldElEOiBcbiAgICAnZTMwMmY2NGQ3M2Y0ZThmYTkxMTc3YzQ3Y2NmOTVmYTEnXG59O1xuIl0sIm5hbWVzIjpbInByb2R1Y3Rpb24iLCJiYXNlVXJsIiwiR29vZ2xlX0NsaWVudElEIiwiR29vZ2xlX1NlY3JldElEIiwiRmFjZWJvb2tfQ2xpZW50SUQiLCJGYWNlYm9va19TZWNyZXRJRCIsIkJ1eU1lQ29mZmVlX0xpbmsiLCJNZXRhbWFza19JRCIsIkpXVF9TZWNyZXRJRCJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(api)/./environment.ts\n");
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "C": () => (/* binding */ production)
+/* harmony export */ });
+const production = {
+    production: true,
+    baseUrl: "https://locumstreet.fly.dev",
+    Google_ClientID: "34998620114-rah2h9r09ugdiinm5ehaekc8ijleu6ag.apps.googleusercontent.com",
+    Google_SecretID: "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",
+    Facebook_ClientID: "559742852486035",
+    Facebook_SecretID: "35686ce94d0c85f6ab91da3f7c1a18d6",
+    BuyMeCoffee_Link: "https://www.buymeacoffee.com/paanjoe",
+    Metamask_ID: "0xF70ccD734C779B0a852E3Ab3c2657D7a4a981462",
+    JWT_SecretID: "e302f64d73f4e8fa91177c47ccf95fa1",
+    OAuth_Redirect_URL: "http://localhost:3000"
+};
+
 
 /***/ }),
 
-/***/ "(api)/./src/pages/api/jobs.ts":
-/*!*******************************!*\
-  !*** ./src/pages/api/jobs.ts ***!
-  \*******************************/
+/***/ 153:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* export default binding */ __WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var pocketbase__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pocketbase */ \"pocketbase\");\n/* harmony import */ var _environment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../environment */ \"(api)/./environment.ts\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([pocketbase__WEBPACK_IMPORTED_MODULE_0__]);\npocketbase__WEBPACK_IMPORTED_MODULE_0__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];\n\n\n/* harmony default export */ async function __WEBPACK_DEFAULT_EXPORT__(req, res) {\n    // We want to add authorization for security\n    // We want to know what is the request method\n    const method = req.method;\n    // We want to set our base API URL\n    const baseUrl = _environment__WEBPACK_IMPORTED_MODULE_1__.production.baseUrl;\n    // Initialize our back end apps\n    const client = new pocketbase__WEBPACK_IMPORTED_MODULE_0__[\"default\"](baseUrl);\n    // Identify which operation should be executed\n    switch(method){\n        // Get All Records\n        case \"GET\":\n            try {\n                const records = await client.records.getFullList(\"jobs\", 200, {\n                    sort: \"-jobDatePosted\",\n                    filter: \"listingStatus != false\",\n                    expand: \"jobOwnerID, jobImageArr\"\n                });\n                return res.status(200).json(records);\n            } catch (err) {\n                return res.status(400).json(err);\n            }\n        // Create New Records\n        case \"POST\":\n            try {\n                const create = await req.body;\n                const record = await client.records.create(\"jobs\", create);\n                return res.status(201).json({\n                    success: true,\n                    data: record\n                });\n            } catch (err1) {\n                return res.status(400).json(err1);\n            }\n        // If something went wrong / header request not valid\n        default:\n            res.setHeader(\"Allow\", [\n                \"GET\",\n                \"POST\"\n            ]);\n            return res.status(405).json(`Method ${method} Not Allowed`);\n    }\n}\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwaSkvLi9zcmMvcGFnZXMvYXBpL2pvYnMudHMuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7O0FBQ29DO0FBQ2M7QUFFbEQsNkJBQWUsMENBQWdCRSxHQUFtQixFQUFFQyxHQUFvQixFQUFFO0lBQ3hFLDRDQUE0QztJQUU1Qyw2Q0FBNkM7SUFDN0MsTUFBTUMsTUFBTSxHQUFHRixHQUFHLENBQUNFLE1BQU07SUFFekIsa0NBQWtDO0lBQ2xDLE1BQU1DLE9BQU8sR0FBR0osNERBQWtCO0lBRWxDLCtCQUErQjtJQUMvQixNQUFNSyxNQUFNLEdBQUcsSUFBSU4sa0RBQVUsQ0FBQ0ssT0FBTyxDQUFDO0lBRXRDLDhDQUE4QztJQUM5QyxPQUFRRCxNQUFNO1FBQ1osa0JBQWtCO1FBQ2xCLEtBQUssS0FBSztZQUNSLElBQUk7Z0JBQ0YsTUFBTUcsT0FBTyxHQUFHLE1BQU1ELE1BQU0sQ0FBQ0MsT0FBTyxDQUFDQyxXQUFXLENBQUMsTUFBTSxFQUFFLEdBQUcsRUFBRTtvQkFDNURDLElBQUksRUFBRSxnQkFBZ0I7b0JBQ3RCQyxNQUFNLEVBQUUsd0JBQXdCO29CQUNoQ0MsTUFBTSxFQUFFLHlCQUF5QjtpQkFDbEMsQ0FBQztnQkFDRixPQUFPUixHQUFHLENBQUNTLE1BQU0sQ0FBQyxHQUFHLENBQUMsQ0FBQ0MsSUFBSSxDQUFDTixPQUFPLENBQUMsQ0FBQztZQUN2QyxFQUFFLE9BQU9PLEdBQUcsRUFBRTtnQkFDWixPQUFPWCxHQUFHLENBQUNTLE1BQU0sQ0FBQyxHQUFHLENBQUMsQ0FBQ0MsSUFBSSxDQUFDQyxHQUFHLENBQUMsQ0FBQztZQUNuQyxDQUFDO1FBRUgscUJBQXFCO1FBQ3JCLEtBQUssTUFBTTtZQUNULElBQUk7Z0JBQ0YsTUFBTUMsTUFBTSxHQUFHLE1BQU1iLEdBQUcsQ0FBQ2MsSUFBSTtnQkFDN0IsTUFBTUMsTUFBTSxHQUFHLE1BQU1YLE1BQU0sQ0FBQ0MsT0FBTyxDQUFDUSxNQUFNLENBQUMsTUFBTSxFQUFFQSxNQUFNLENBQUM7Z0JBQzFELE9BQU9aLEdBQUcsQ0FBQ1MsTUFBTSxDQUFDLEdBQUcsQ0FBQyxDQUFDQyxJQUFJLENBQUM7b0JBQUVLLE9BQU8sRUFBRSxJQUFJO29CQUFFQyxJQUFJLEVBQUVGLE1BQU07aUJBQUUsQ0FBQyxDQUFDO1lBQy9ELEVBQUUsT0FBT0gsSUFBRyxFQUFFO2dCQUNaLE9BQU9YLEdBQUcsQ0FBQ1MsTUFBTSxDQUFDLEdBQUcsQ0FBQyxDQUFDQyxJQUFJLENBQUNDLElBQUcsQ0FBQyxDQUFDO1lBQ25DLENBQUM7UUFFSCxxREFBcUQ7UUFDckQ7WUFDRVgsR0FBRyxDQUFDaUIsU0FBUyxDQUFDLE9BQU8sRUFBRTtnQkFBQyxLQUFLO2dCQUFFLE1BQU07YUFBQyxDQUFDLENBQUM7WUFDeEMsT0FBT2pCLEdBQUcsQ0FBQ1MsTUFBTSxDQUFDLEdBQUcsQ0FBQyxDQUFDQyxJQUFJLENBQUMsQ0FBQyxPQUFPLEVBQUVULE1BQU0sQ0FBQyxZQUFZLENBQUMsQ0FBQyxDQUFDO0tBQy9EO0FBQ0gsQ0FBQyIsInNvdXJjZXMiOlsid2VicGFjazovL3RzLW5leHRqcy10YWlsd2luZC1zdGFydGVyLy4vc3JjL3BhZ2VzL2FwaS9qb2JzLnRzP2M2OTYiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgTmV4dEFwaVJlcXVlc3QsIE5leHRBcGlSZXNwb25zZSB9IGZyb20gJ25leHQnO1xuaW1wb3J0IFBvY2tldEJhc2UgZnJvbSAncG9ja2V0YmFzZSc7XG5pbXBvcnQgeyBwcm9kdWN0aW9uIH0gZnJvbSAnLi4vLi4vLi4vZW52aXJvbm1lbnQnO1xuXG5leHBvcnQgZGVmYXVsdCBhc3luYyBmdW5jdGlvbiAocmVxOiBOZXh0QXBpUmVxdWVzdCwgcmVzOiBOZXh0QXBpUmVzcG9uc2UpIHtcbiAgLy8gV2Ugd2FudCB0byBhZGQgYXV0aG9yaXphdGlvbiBmb3Igc2VjdXJpdHlcblxuICAvLyBXZSB3YW50IHRvIGtub3cgd2hhdCBpcyB0aGUgcmVxdWVzdCBtZXRob2RcbiAgY29uc3QgbWV0aG9kID0gcmVxLm1ldGhvZDtcblxuICAvLyBXZSB3YW50IHRvIHNldCBvdXIgYmFzZSBBUEkgVVJMXG4gIGNvbnN0IGJhc2VVcmwgPSBwcm9kdWN0aW9uLmJhc2VVcmw7XG5cbiAgLy8gSW5pdGlhbGl6ZSBvdXIgYmFjayBlbmQgYXBwc1xuICBjb25zdCBjbGllbnQgPSBuZXcgUG9ja2V0QmFzZShiYXNlVXJsKTtcblxuICAvLyBJZGVudGlmeSB3aGljaCBvcGVyYXRpb24gc2hvdWxkIGJlIGV4ZWN1dGVkXG4gIHN3aXRjaCAobWV0aG9kKSB7XG4gICAgLy8gR2V0IEFsbCBSZWNvcmRzXG4gICAgY2FzZSAnR0VUJzpcbiAgICAgIHRyeSB7XG4gICAgICAgIGNvbnN0IHJlY29yZHMgPSBhd2FpdCBjbGllbnQucmVjb3Jkcy5nZXRGdWxsTGlzdCgnam9icycsIDIwMCwge1xuICAgICAgICAgIHNvcnQ6ICctam9iRGF0ZVBvc3RlZCcsXG4gICAgICAgICAgZmlsdGVyOiAnbGlzdGluZ1N0YXR1cyAhPSBmYWxzZScsXG4gICAgICAgICAgZXhwYW5kOiAnam9iT3duZXJJRCwgam9iSW1hZ2VBcnInLFxuICAgICAgICB9KTtcbiAgICAgICAgcmV0dXJuIHJlcy5zdGF0dXMoMjAwKS5qc29uKHJlY29yZHMpO1xuICAgICAgfSBjYXRjaCAoZXJyKSB7XG4gICAgICAgIHJldHVybiByZXMuc3RhdHVzKDQwMCkuanNvbihlcnIpO1xuICAgICAgfVxuXG4gICAgLy8gQ3JlYXRlIE5ldyBSZWNvcmRzXG4gICAgY2FzZSAnUE9TVCc6XG4gICAgICB0cnkge1xuICAgICAgICBjb25zdCBjcmVhdGUgPSBhd2FpdCByZXEuYm9keTtcbiAgICAgICAgY29uc3QgcmVjb3JkID0gYXdhaXQgY2xpZW50LnJlY29yZHMuY3JlYXRlKCdqb2JzJywgY3JlYXRlKTtcbiAgICAgICAgcmV0dXJuIHJlcy5zdGF0dXMoMjAxKS5qc29uKHsgc3VjY2VzczogdHJ1ZSwgZGF0YTogcmVjb3JkIH0pO1xuICAgICAgfSBjYXRjaCAoZXJyKSB7XG4gICAgICAgIHJldHVybiByZXMuc3RhdHVzKDQwMCkuanNvbihlcnIpO1xuICAgICAgfVxuXG4gICAgLy8gSWYgc29tZXRoaW5nIHdlbnQgd3JvbmcgLyBoZWFkZXIgcmVxdWVzdCBub3QgdmFsaWRcbiAgICBkZWZhdWx0OlxuICAgICAgcmVzLnNldEhlYWRlcignQWxsb3cnLCBbJ0dFVCcsICdQT1NUJ10pO1xuICAgICAgcmV0dXJuIHJlcy5zdGF0dXMoNDA1KS5qc29uKGBNZXRob2QgJHttZXRob2R9IE5vdCBBbGxvd2VkYCk7XG4gIH1cbn1cbiJdLCJuYW1lcyI6WyJQb2NrZXRCYXNlIiwicHJvZHVjdGlvbiIsInJlcSIsInJlcyIsIm1ldGhvZCIsImJhc2VVcmwiLCJjbGllbnQiLCJyZWNvcmRzIiwiZ2V0RnVsbExpc3QiLCJzb3J0IiwiZmlsdGVyIiwiZXhwYW5kIiwic3RhdHVzIiwianNvbiIsImVyciIsImNyZWF0ZSIsImJvZHkiLCJyZWNvcmQiLCJzdWNjZXNzIiwiZGF0YSIsInNldEhlYWRlciJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(api)/./src/pages/api/jobs.ts\n");
+__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* export default binding */ __WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var pocketbase__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3895);
+/* harmony import */ var _environment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2092);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([pocketbase__WEBPACK_IMPORTED_MODULE_0__]);
+pocketbase__WEBPACK_IMPORTED_MODULE_0__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+
+
+/* harmony default export */ async function __WEBPACK_DEFAULT_EXPORT__(req, res) {
+    // We want to add authorization for security
+    // We want to know what is the request method
+    const method = req.method;
+    // We want to set our base API URL
+    const baseUrl = _environment__WEBPACK_IMPORTED_MODULE_1__/* .production.baseUrl */ .C.baseUrl;
+    // Initialize our back end apps
+    const client = new pocketbase__WEBPACK_IMPORTED_MODULE_0__["default"](baseUrl);
+    // Identify which operation should be executed
+    switch(method){
+        // Get All Records
+        case "GET":
+            try {
+                const records = await client.records.getFullList("jobs", 200, {
+                    sort: "-jobDatePosted",
+                    filter: "listingStatus != false",
+                    expand: "jobOwnerID, jobImageArr"
+                });
+                return res.status(200).json(records);
+            } catch (err) {
+                return res.status(400).json(err);
+            }
+        // Create New Records
+        case "POST":
+            try {
+                const create = await req.body;
+                const record = await client.records.create("jobs", create);
+                return res.status(201).json({
+                    success: true,
+                    data: record
+                });
+            } catch (err1) {
+                return res.status(400).json(err1);
+            }
+        // If something went wrong / header request not valid
+        default:
+            res.setHeader("Allow", [
+                "GET",
+                "POST"
+            ]);
+            return res.status(405).json(`Method ${method} Not Allowed`);
+    }
+}
+
+__webpack_async_result__();
+} catch(e) { __webpack_async_result__(e); } });
 
 /***/ })
 
@@ -50,7 +104,7 @@ eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__
 var __webpack_require__ = require("../../webpack-api-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__("(api)/./src/pages/api/jobs.ts"));
+var __webpack_exports__ = (__webpack_exec__(153));
 module.exports = __webpack_exports__;
 
 })();
